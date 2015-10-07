@@ -5,7 +5,7 @@ PImage en;
 PImage fi;
 PImage hp;
 PImage tr;
-int x=0,y,z=0;
+int x=0,z=0;
 float a=random(30,200);
 float b=random(640);
 float c=random(480);
@@ -25,9 +25,8 @@ void draw() {
   // your code
   image(bg1,x++,0);
   x %= 1280;
-  y = x;
-  image(bg2,y-640,0);
-  image(bg1,y-1280,0);
+  image(bg2,x-640,0);
+  image(bg1,x-1280,0);
   image(fi,580,250);//fighter
   image(tr,b,c);//treasure
   /* enemy */
